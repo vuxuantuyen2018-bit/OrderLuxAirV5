@@ -1,0 +1,8 @@
+{
+  "name": "Dodoto Lux Air V5",
+  "description": "Premium High-Tech Cordless Handheld Vacuum Landing Page designed for high conversion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
