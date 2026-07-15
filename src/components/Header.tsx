@@ -45,7 +45,7 @@ export default function Header({ onOpenCheckout }: HeaderProps) {
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-2 group">
             <span className="font-display font-bold text-2xl tracking-wider text-brand flex items-center gap-1.5">
-              DODOTO <span className="text-xs bg-brand text-white px-1.5 py-0.5 rounded-xs font-mono font-medium">LUX</span>
+              LUX AIR V5
             </span>
           </a>
 

@@ -55,8 +55,9 @@ export default function CTA({ onOpenCheckout }: CTAProps) {
         </motion.div>
 
         {/* Headline */}
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-gray-900 mb-6 leading-tight max-w-4xl mx-auto">
-          Nâng cấp trải nghiệm vệ sinh<br />ngay hôm nay.
+        <h2 className="text-2xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight text-gray-900 mb-6 leading-tight max-w-4xl mx-auto">
+          <span className="inline-block">Nâng cấp trải nghiệm vệ sinh</span><br />
+          <span className="inline-block">ngay hôm nay.</span>
         </h2>
 
         {/* Countdown timer with premium brand red cards */}

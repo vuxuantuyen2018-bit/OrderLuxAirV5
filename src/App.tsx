@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ShoppingCart, Flame, Sparkles } from "lucide-react";
 
 // Components
+import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Problems from "./components/Problems";
 import Solution from "./components/Solution";
@@ -57,6 +58,9 @@ export default function App() {
 
   return (
     <div id="dodoto-landing-app" className="relative min-h-screen bg-light-bg overflow-x-hidden font-sans">
+      
+      {/* 1. Header Navigation */}
+      <Header onOpenCheckout={handleOpenCheckout} />
       
       {/* 2. Hero Section (Parallax & Counters) */}
       <Hero onOpenCheckout={handleOpenCheckout} onOpenVideo={handleOpenMainVideo} />
