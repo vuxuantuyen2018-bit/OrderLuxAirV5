@@ -138,11 +138,12 @@ export default function CheckoutModal({ isOpen, onClose }: CheckoutModalProps) {
       };
 
       if (useAppsScript) {
-        if (!appsScriptUrl || !appsScriptUrl.trim()) {
-          throw new Error("Chưa cấu hình đường dẫn Google Apps Script Web App URL. Vui lòng bấm vào nút Cấu hình ở góc dưới để thiết lập!");
+        if (appsScriptUrl && appsScriptUrl.trim()) {
+          // Push directly to Google Apps Script Web App without requiring OAuth
+          await appendOrderViaAppsScript(orderData, appsScriptUrl);
+        } else {
+          console.warn("VITE_APPS_SCRIPT_URL is not configured. Order will be stored locally in localStorage.");
         }
-        // Push directly to Google Apps Script Web App without requiring OAuth
-        await appendOrderViaAppsScript(orderData, appsScriptUrl);
       } else {
         // Fallback to Google OAuth
         let activeToken = token;

@@ -13,5 +13,5 @@ export const GOOGLE_SHEETS_CONFIG = {
 
   // Paste your deployed Google Apps Script Web App URL here after publishing.
   // Example: "https://script.google.com/macros/s/AKfycby.../exec"
-  appsScriptUrl: ""
+  appsScriptUrl: (import.meta as any).env?.VITE_APPS_SCRIPT_URL || ""
 };
